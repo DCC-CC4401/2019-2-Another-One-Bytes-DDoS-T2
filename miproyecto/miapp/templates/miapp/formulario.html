@@ -1,0 +1,52 @@
+{% extends 'miapp/index.html' %}
+{% block main %}
+    <div class="row">
+        <div class="col-md-12">
+            <form id="form_80462" class="appnitro"  method="post" action="">
+                        <div class="form_description">
+                <h2>Iniciar Actividad</h2>
+                <p>Seleccione la actividad que desea iniciar</p>
+            </div>
+                <ul >
+
+                        <li id="li_2" >
+            <label class="description" for="element_2">Actividad a iniciar </label>
+            <div class="col-md-12">
+            <select class="element select large" id="element_2" name="element_2">
+                <option value="" selected="selected"></option>
+                <option value="1" >Estudiar</option>
+                <option value="2" >Descansar</option>
+                <option value="3" >Hacer deporte</option>
+                <option value="4" >Sociabilizar</option>
+                <option value="5" >40 horas de trabajo</option>
+                <option value="6" >Ver monitos chinos</option>
+                <option value="7" >Recostarse, mirar el techo y sumergirse hacia la locura</option>
+
+            </select>
+            </div>
+            </li>		<li id="li_1" >
+            <label class="description" for="element_1">Tiempo estimado </label>
+            <span>
+                <input id="element_1_1" name="element_1_1" class="element text " size="2" type="text" maxlength="2" value=""/> :
+                <label>HH</label>
+            </span>
+            <span>
+                <input id="element_1_2" name="element_1_2" class="element text " size="2" type="text" maxlength="2" value=""/> :
+                <label>MM</label>
+            </span>
+            <span>
+                <input id="element_1_3" name="element_1_3" class="element text " size="2" type="text" maxlength="2" value=""/>
+                <label>SS</label>
+            </span>
+            </li>
+
+                        <li class="buttons">
+                    <input type="hidden" name="form_id" value="80462" />
+
+                    <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+            </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+{% endblock %}
