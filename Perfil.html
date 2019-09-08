@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>Perfil de usuario</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/usm/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-between">
+      <a class="navbar-brand" href="#">Logo</a>
+      <div class="collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+          <li style="list-style: none; display: inline">
+            <form class="form-inline">
+            <input class="form-control mr-md-2" type="search" placeholder="Buscar personas" aria-label="Search" /> 
+            <button class="btn btn-outline-light my-2 my-md-0" type="submit">Buscar</button></form>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a id="Perfil" class="nav-item nav-link dropdown-toggle  pr-md-5 pl-md-5" href="#" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Perfil</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
+            <a class="dropdown-item" href="#">Ver perfil</a> 
+            <a class="dropdown-item" href="#">Configuracion</a> 
+            <a class="dropdown-item" href="#">Log out</a></div>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a id="Perfil" class="btn btn-outline-light dropdown-toggle ml-md-3 px-md-5" href="#" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Perfil</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
+            <a class="dropdown-item" href="#">Ver perfil</a> 
+            <a class="dropdown-item" href="#">Configuracion</a> 
+            <a class="dropdown-item" href="#">Log out</a></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 ">
+          <div class="row">
+            <div class="col-md-12 minh"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="Images/profile.jpg" alt="Default profile" class="rounded-circle mx-auto my-md-3 d-block" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table id="InfoPerfil" class="table responsive table-borderless border border-success mx-auto">
+                <tbody>
+                  <tr>
+                    <th scope="row">Nombre:</th>
+                    <td>John Smith</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cumpleaños:</th>
+                    <td style="text-align:Left">01-01-1900</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Correo electronico:</th>
+                    <td style="text-align:Left">john.smith@outlook.cl</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Contraseña:</th>
+                    <td style="text-align:Left">*********</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button class="btn btn-block btn-success" type="submit" id="Editar">Editar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 ml-4 mr-3">
+          <div class="row">
+            <div class="col-md-12  my-1">
+              <h1 style="text-align: center">Actividades Tipo</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table id="ActividadesTipo" class="table responsive table-borderless border border-success  maxhAct actividadh">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-bottom-0 border-success">
+                        <div class="p-1 tw" style="font-weight: bold">Nombre:</div>
+                        <div class="p-1">
+                          <p class="text-break">Estudio control</p>
+                        </div>
+                      </div>
+                      <div class="d-flex pl-2 bg-light border-right border-left border-success">
+                        <div class="p-1 tw" style="font-weight: bold">Descripción:</div>
+                        <div class="p-1">
+                          <p class="text-break">Estudio para el control mas cercano que tenga</p>
+                        </div>
+                      </div>
+                      <div class="d-flex pl-2 bg-light border border-top-0 border-success">
+                        <div class="p-1 tw" style="font-weight: bold">Categoria:</div>
+                        <div class="p-1">
+                          <p class="text-break">Estudios</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                 <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-bottom-0 border-success">
+                        <div class="p-1 tw" style="font-weight: bold">Nombre:</div>
+                        <div class="p-1">
+                          <p class="text-break">Dormir</p>
+                        </div>
+                      </div>
+                      <div class="d-flex pl-2 bg-light border-right border-left border-success">
+                        <div class="p-1 tw" style="font-weight: bold">Descripción:</div>
+                        <div class="p-1">
+                          <p class="text-break">Mientras duerma en la noche esta actividad lo registra, test texto
+                          laaaaaaaaaaaaaaaaaaaaaaaaaaaaargo</p>
+                        </div>
+                      </div>
+                      <div class="d-flex pl-2 bg-light border border-top-0 border-success">
+                        <div class="p-1 tw" style="font-weight: bold">Categoria:</div>
+                        <div class="p-1">
+                          <p class="text-break">Descanso</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 ">
+              <button class="btn  btn-block btn-success" type="submit" id="Agregar">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-4 my-5">
+          <div class="row">
+            <div class="col-md-12 my-1">
+			
+              <h1 style="text-align: center">Lista de amigos</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"> <table id="ActividadesTipo" class="table responsive table-borderless border border-success amigosh maxh">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="pt-3 pl-2" >
+                          <p class="text-break  align-middle"><h6>Jane Smith</h6></p>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="pt-3 pl-2" >
+                          <p class="text-break  align-middle"><h6>Jane Smith 2</h6></p>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="pt-3 pl-2" >
+                          <p class="text-break  align-middle"><h6>Jane Smith 3</h6></p>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="pt-3 pl-2" >
+                          <p class="text-break  align-middle"><h6>Jane Smith 4</h6></p>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="pt-3 pl-2" >
+                          <p class="text-break  align-middle"><h6>Jane Smith 5</h6></p>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="pt-3 pl-2" >
+                          <p class="text-break  align-middle"><h6>Jane Smith 6</h6></p>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+			  </div>
+          </div>
+		  <div class="row">
+            <div class="col-md-12 my-1">
+			
+              <h1 style="text-align: center">Solicitudes de amistad</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"> <table id="ActividadesTipo" class="table responsive table-borderless border border-success amigosh maxh">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="py-2 pl-2" >
+                          <p class="text-break  align-middle"><h6>John Smith 2</h6></p>
+						  <button class="btn  btn-success my-2 my-md-0" type="submit">Aceptar</button>
+						  <button class="btn btn-danger my-2 mx-1 my-md-0" type="submit">Rechazar</button>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="py-2 pl-2" >
+                          <p class="text-break  align-middle"><h6>John Smith 3</h6></p>
+						  <button class="btn  btn-success my-2 my-md-0" type="submit">Aceptar</button>
+						  <button class="btn btn-danger my-2 mx-1 my-md-0" type="submit">Rechazar</button>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="py-2 pl-2" >
+                          <p class="text-break  align-middle"><h6>John Smith 4</h6></p>
+						  <button class="btn  btn-success my-2 my-md-0" type="submit">Aceptar</button>
+						  <button class="btn btn-danger my-2 mx-1 my-md-0" type="submit">Rechazar</button>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="py-2 pl-2" >
+                          <p class="text-break  align-middle"><h6>John Smith 5</h6></p>
+						  <button class="btn  btn-success my-2 my-md-0" type="submit">Aceptar</button>
+						  <button class="btn btn-danger my-2 mx-1 my-md-0" type="submit">Rechazar</button>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>
+                      <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                        <div class="pb-2"><img src="Images/profile75p.jpg" alt="DefaultFriend" class="rounded-circle mx-auto d-block" /> </div>
+                        <div class="py-2 pl-2" >
+                          <p class="text-break  align-middle"><h6>John Smith 6</h6></p>
+						  <button class="btn  btn-success my-2 my-md-0" type="submit">Aceptar</button>
+						  <button class="btn btn-danger my-2 mx-1 my-md-0" type="submit">Rechazar</button>
+                        </div>
+                      </div>
+                      
+                      
+                    </td>
+                  </tr>
+				  
+                  
+                </tbody>
+              </table>
+			  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

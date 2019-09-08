@@ -1,0 +1,66 @@
+.maxh {
+    display: inline-block;
+    overflow-y: scroll;
+    max-height:300px;
+
+}
+.maxhAct {
+    display: inline-block;
+    overflow-y: scroll;
+    max-height:250px;
+
+}
+td:first-child { width: 33% ;}
+.tw{
+	
+	width:100px;
+}
+.minh {
+    min-height:100px;
+}
+.amigosh{
+	min-height:100px;
+	
+}
+.actividadh{
+	min-height:100px;
+	
+}
+
+.bg1{
+  background: red;
+  
+  
+/*   added height vh for testing purposes */
+}
+
+.bg2{
+  background: blue;
+ 
+/*   added height vh for testing purposes */
+}
+.bg3{
+  background: green;
+ 
+/*   added height vh for testing purposes */
+}
+.bg4{
+  background: gray;
+ 
+/*   added height vh for testing purposes */
+}
+.bg5{
+  background: yellow;
+ 
+/*   added height vh for testing purposes */
+}
+.bg6{
+  background: pink;
+ 
+/*   added height vh for testing purposes */
+}
+.hmax{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
