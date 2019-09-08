@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>Perfil de usuario</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/usm/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+    <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-between">
+            <a class="navbar-brand" href="#"><img src="Images/logo.jpeg" height="80" class="rounded-circle mx-auto d-block"></a>
+            <div class="collapse navbar-collapse" id="navb">
+              <ul class="navbar-nav mr-auto"></ul>
+              <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li style="list-style: none; display: inline">
+                  <form class="form-inline">
+                  <input class="form-control mr-md-2" type="search" placeholder="Buscar personas" aria-label="Search" /> 
+                  <button class="btn btn-outline-light my-2 my-md-0" type="submit">Buscar</button></form>
+                </li>
+                <li class="nav-item dropdown">
+                  <a id="Perfil" class="btn btn-outline-light dropdown-toggle ml-md-3 px-md-5" href="#" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Perfil</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
+                  <a class="dropdown-item" href="#">Ver perfil</a> 
+                  <a class="dropdown-item" href="#">Configuración</a> 
+                  <a class="dropdown-item" href="#">Log out</a></div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                    <form id="form_80462" class="appnitro"  method="post" action="">
+                        <div class="form_description">
+                            <h2>Iniciar Actividad</h2>
+                            <p>Seleccione una actividad tipo o una categoría</p>
+                        </div>
+                        <ul >
+                            <li id="li_2" >
+                                <label class="description" for="element_2">Actividad a iniciar </label>
+                                <div class="col-md-12">
+                                    <select class="element select large" id="element_2" name="element_2">
+                                        <option value="" selected="selected"></option>
+                                        <option value="1" >40 horas de trabajo</option>
+                                        <option value="2" >Ver monitos chinos</option>
+                                        <option value="3" >Recostarse, mirar el techo y sumergirse hacia la locura</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <a href="{% url "chrono" %}"  role="button" class="btn btn-success">Submit</a>
+                            <li id="li_2" >
+                                <label class="description" for="element_2">Categoría a iniciar </label>
+                                <div class="col-md-12">
+                                    <select class="element select large" id="element_2" name="element_2">
+                                        <option value="" selected="selected"></option>
+                                        <option value="1" >Estudiar</option>
+                                        <option value="2" >Descansar</option>
+                                        <option value="3" >Hacer deporte</option>
+                                        <option value="4" >Sociabilizar</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li id="li_1" >
+                                <label class="description" for="element_1">Tiempo estimado </label>
+                                <span>
+                                    <input id="element_1_1" name="element_1_1" class="element text " size="2" type="text" maxlength="2" value=""/> :
+                                    <label>HH</label>
+                                </span>
+                                <span>
+                                    <input id="element_1_2" name="element_1_2" class="element text " size="2" type="text" maxlength="2" value=""/> :
+                                    <label>MM</label>
+                                </span>
+                                <span>
+                                    <input id="element_1_3" name="element_1_3" class="element text " size="2" type="text" maxlength="2" value=""/>
+                                    <label>SS</label>
+                                </span>
+                            </li>
+                            <a href="{% url "chrono" %}"  role="button" class="btn btn-success">Submit</a>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+    </body>
+</html>
+
+
+
+
+
+
