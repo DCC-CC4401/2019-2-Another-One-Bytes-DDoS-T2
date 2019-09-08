@@ -10,6 +10,20 @@
     max-height:250px;
 
 }
+.maxhActedit {
+    display: inline-block;
+    overflow-y: scroll;
+    max-height:290px;
+
+}
+.avatar {
+    background: src="Images/profile.jpg" #f2f2f2;
+
+  }
+.avatar:hover {
+    background: src="Images/profile.jpg" #e0e0e0;
+ 
+  }
 td:first-child { width: 33% ;}
 .tw{
 	

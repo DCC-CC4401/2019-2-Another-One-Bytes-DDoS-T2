@@ -31,11 +31,10 @@
           </div>
           <div class="modal-footer">
           <button type="button" class="btn btn-secondary btn-danger" data-dismiss="modal">Cancelar</button> 
-          <button type="button" class="btn btn-primary btn-success">Aceptar</button></div>
+          <button type="button" class="btn btn-primary btn-success" >Aceptar</button></div>
         </div>
       </div>
     </div>
-    <!-- Modal remover actividad tipo -->
     <div class="modal fade" id="modalRemover" tabindex="-1" role="dialog" aria-labelledby="modalRemover" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -49,7 +48,7 @@
             <div class="col-sm-12">Una vez removida, no podras usarla hasta que la creas nuevamente.</div>
           </div>
           <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button> 
+          <button type="button" class="btn btn-primary " data-dismiss="modal">Cancelar</button> 
           <button type="button" class="btn btn-secondary btn-danger">Remover</button></div>
         </div>
       </div>
@@ -65,15 +64,15 @@
             </button>
           </div>
           <div class="modal-body">
-            <label for="nombre" class="col-md-2 col-form-label">Nombre</label>
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
             <div class="col-sm-12">
               <input type="text" class="form-control" id="nombre" placeholder="Nombre" />
             </div>
-            <label for="descripcion" class="col-md-2 col-form-label">Descripción</label>
+            <label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
             <div class="col-sm-12">
               <textarea class="form-control" id="descripcion" rows="3" placeholder="Descripción"></textarea>
             </div>
-            <label for="categoria" class="col-md-2 col-form-label">Categoría</label>
+            <label for="categoria" class="col-sm-2 col-form-label">Categoría</label>
             <div class="col-sm-12">
               <select class="form-control" id="categoria">
                 <option>Estudio</option>
@@ -89,7 +88,7 @@
         </div>
       </div>
     </div>
-	  <!-- Modal editar foto-->
+	<!-- Modal editar foto-->
     <div class="modal fade" id="avatarModal" tabindex="-1" role="dialog" aria-labelledby="avatarActividad" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -130,12 +129,13 @@
             aria-haspopup="true" aria-expanded="false">Perfil</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
             <a class="dropdown-item" href="#">Ver perfil</a> 
-            <a class="dropdown-item" href="#">Configuración</a> 
+            <a class="dropdown-item" href="#">Configuracion</a> 
             <a class="dropdown-item" href="#">Log out</a></div>
           </li>
         </ul>
       </div>
     </nav>
+	
     <!-- Container bootstrap -->
     <div class="container-fluid">
       <div class="row">
@@ -145,12 +145,10 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-			<button class="btn btn-default rounded-circle mx-auto d-block" type="button" id="avatar" data-toggle="modal"
+              <button class="btn btn-default rounded-circle mx-auto d-block" type="button" id="avatar" data-toggle="modal"
               data-target="#avatarModal">
        <img src="Images/profile.jpg" alt="Default profile" class="rounded-circle mx-auto my-md-3 d-block" />
 		</button>
-            
-			  
             </div>
           </div>
           <div class="row">
@@ -159,19 +157,27 @@
                 <tbody>
                   <tr>
                     <th scope="row">Nombre:</th>
-                    <td>John Smith</td>
+                    <td>
+                      <input type="text" class="form-control form-control-sm" id="nombre" placeholder="John Smith" />
+                    </td>
                   </tr>
                   <tr>
                     <th scope="row">Cumpleaños:</th>
-                    <td style="text-align:Left">01-01-1900</td>
+                    <td style="text-align:Left">
+                      <input type="text" class="form-control form-control-sm" id="año" placeholder="01-01-1900" />
+                    </td>
                   </tr>
                   <tr>
                     <th scope="row">Correo electronico:</th>
-                    <td style="text-align:Left">john.smith@outlook.cl</td>
+                    <td style="text-align:Left">
+                      <input type="text" class="form-control form-control-sm" id="correo" placeholder="john.smith@outlook.cl" />
+                    </td>
                   </tr>
                   <tr>
                     <th scope="row">Contraseña:</th>
-                    <td style="text-align:Left">*********</td>
+                    <td style="text-align:Left">
+                      <input type="password" class="form-control form-control-sm" id="password" placeholder="*********" />
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -179,8 +185,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <button class="btn btn-block btn-success" type="button" id="Editar" data-toggle="modal"
-              data-target="#editarModal">Editar</button>
+              <button class="btn btn-block btn-success" type="submit" id="Aceptar">Aceptar cambios</button>
             </div>
           </div>
         </div>
@@ -255,7 +260,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <button class="btn btn-block btn-success" type="button" id="agregar" data-toggle="modal"
+              <button class="btn btn-block btn-success" type="button" id="Editar" data-toggle="modal"
               data-target="#actividadModal">Agregar actividad</button>
             </div>
           </div>

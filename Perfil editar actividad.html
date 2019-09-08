@@ -31,7 +31,7 @@
           </div>
           <div class="modal-footer">
           <button type="button" class="btn btn-secondary btn-danger" data-dismiss="modal">Cancelar</button> 
-          <button type="button" class="btn btn-primary btn-success">Aceptar</button></div>
+          <button type="button" class="btn btn-primary btn-success ">Aceptar</button></div>
         </div>
       </div>
     </div>
@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-	  <!-- Modal editar foto-->
+	<!-- Modal editar foto-->
     <div class="modal fade" id="avatarModal" tabindex="-1" role="dialog" aria-labelledby="avatarActividad" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -130,7 +130,7 @@
             aria-haspopup="true" aria-expanded="false">Perfil</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
             <a class="dropdown-item" href="#">Ver perfil</a> 
-            <a class="dropdown-item" href="#">Configuración</a> 
+            <a class="dropdown-item" href="#">Configuracion</a> 
             <a class="dropdown-item" href="#">Log out</a></div>
           </li>
         </ul>
@@ -145,12 +145,10 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-			<button class="btn btn-default rounded-circle mx-auto d-block" type="button" id="avatar" data-toggle="modal"
+              <button class="btn btn-default rounded-circle mx-auto d-block" type="button" id="avatar" data-toggle="modal"
               data-target="#avatarModal">
        <img src="Images/profile.jpg" alt="Default profile" class="rounded-circle mx-auto my-md-3 d-block" />
 		</button>
-            
-			  
             </div>
           </div>
           <div class="row">
@@ -192,31 +190,42 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <table id="ActividadesTipo" class="table responsive table-borderless border border-success maxhAct actividadh">
+              <table id="ActividadesTipo" class="table responsive table-borderless border border-success maxhActedit actividadh">
                 <tbody>
                   <tr>
                     <td>
                       <!-- Botones de remover y editar -->
                       <div class="d-flex flex-wrap column pt-3 pl-2 pb-1 bg-light border border-bottom-0 border-success">
-                      <button class="btn btn-success" type="submit" id="Editar">Editar</button> 
-                      <button class="btn btn-danger mx-2" type="button" id="Remover" data-toggle="modal"
-                      data-target="#modalRemover">Remover</button></div>
+                      <button class="btn btn-success" type="submit" id="Editar">Aceptar cambios</button> 
+                      <button class="btn btn-danger mx-2" type="submit" id="Cancelar">Cancelar</button></div>
                       <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-bottom-0 border-success">
                         <div class="p-1 tw" style="font-weight: bold">Nombre:</div>
                         <div class="p-1">
-                          <p class="text-break">Estudio control</p>
+                          <div class="col-sm-12">
+                            <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Estudio control" />
+                          </div>
                         </div>
                       </div>
                       <div class="d-flex pl-2 bg-light border-right border-left border-success">
                         <div class="p-1 tw" style="font-weight: bold">Descripción:</div>
                         <div class="p-1">
-                          <p class="text-break">Estudio para el control mas cercano que tenga</p>
+                          <div class="col-sm-12">
+                            <textarea class="form-control" id="descripcion" rows="3"
+                            placeholder="Estudio para el control mas cercano que tenga"></textarea>
+                          </div>
                         </div>
                       </div>
                       <div class="d-flex pl-2 bg-light border border-top-0 border-success">
                         <div class="p-1 tw" style="font-weight: bold">Categoria:</div>
                         <div class="p-1">
-                          <p class="text-break">Estudios</p>
+                          <div class="col-sm-12">
+                            <select class="form-control" id="categoria">
+                              <option>Estudio</option>
+                              <option>Relajo</option>
+                              <option>Deporte</option>
+                              <option>Otro</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </td>
