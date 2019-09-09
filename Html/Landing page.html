@@ -3,7 +3,7 @@
   <head>
     <meta name="generator"
     content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
-    <title>Perfil de usuario</title>
+    <title>Landing page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
@@ -17,32 +17,34 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-between">
             <a class="navbar-brand" href="#"><img src="Images/logo.jpeg" height="80" class="rounded-circle mx-auto d-block"></a>
             <div class="collapse navbar-collapse" id="navb">
-              <ul class="navbar-nav mr-auto"></ul>
-              <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-                <li style="list-style: none; display: inline">
-                  <form class="form-inline">
-                  <input class="form-control mr-md-2" type="search" placeholder="Buscar personas" aria-label="Search" /> 
-                  <button class="btn btn-outline-light my-2 my-md-0" type="submit">Buscar</button></form>
-                </li>
-                <li class="nav-item dropdown">
-                  <a id="Perfil" class="btn btn-outline-light dropdown-toggle ml-md-3 px-md-5" href="#" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Perfil</a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
-                  <a class="dropdown-item" href="#">Ver perfil</a> 
-                  <a class="dropdown-item" href="#">Configuración</a> 
-                  <a class="dropdown-item" href="#">Log out</a></div>
-                </li>
-              </ul>
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                    <li style="list-style: none; display: inline">
+                        <form class="form-inline">
+                            <input class="form-control mr-md-2" type="search" placeholder="Buscar personas" aria-label="Search" /> 
+                            <button class="btn btn-outline-light my-2 my-md-0" type="submit">Buscar</button>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="Perfil" class="btn btn-outline-light dropdown-toggle ml-md-3 px-md-5" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Perfil</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
+                        <a class="dropdown-item" href="#">Ver perfil</a> 
+                        <a class="dropdown-item" href="#">Configuración</a> 
+                        <a class="dropdown-item" href="#">Log out</a></div>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
 
+        <center><div class="row">
+            <div class="col-md-12"><h2>Iniciar Actividad</h2></div>
+        </div></center>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
                     <form id="form_80462" class="appnitro"  method="post" action="">
                         <div class="form_description">
-                            <h2>Iniciar Actividad</h2>
                             <p>Seleccione una actividad tipo o una categoría</p>
                         </div>
                         <ul >
@@ -57,7 +59,7 @@
                                     </select>
                                 </div>
                             </li>
-                            <a href="{% url "chrono" %}"  role="button" class="btn btn-success">Submit</a>
+                            <a href="#"  role="button" class="btn btn-success">Submit</a>
                             <li id="li_2" >
                                 <label class="description" for="element_2">Categoría a iniciar </label>
                                 <div class="col-md-12">
@@ -85,14 +87,239 @@
                                     <label>SS</label>
                                 </span>
                             </li>
-                            <a href="{% url "chrono" %}"  role="button" class="btn btn-success">Submit</a>
+                            <a href="#"  role="button" class="btn btn-success">Submit</a>
                         </ul>
                     </form>
                 </div>
             </div>
         </div>
         <div class="row">
-
+            <div class="col-md-12"><center><h2>Calendario</h2></center></div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                    <table id="Calendario" class="table responsive table-borderless border border-success">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h2>Time</h2>
+                                        </div>
+                                    
+                                </td>
+                                <td>
+                                        
+                                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                              <h2>Monday</h2>
+                                            </div>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                                <h2>Tuesday</h2>
+                                            </div>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                                <h2>Wednesday</h2>
+                                            </div>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                                <h2>Thursday</h2>
+                                            </div>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                                <h2>Friday</h2>
+                                            </div>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                                <h2>Saturday</h2>
+                                            </div>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                                <h2>Sunday</h2>
+                                            </div>
+                                        
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>06:00-08:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>08:00-10:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td><center><div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>Estudiar</h4>
+                                        </div></center></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>10:00-12:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>12:00-14:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>14:00-16:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>16:00-18:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><center><div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>Estudiar</h4>
+                                        </div></center></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>18:00-20:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>20:00-22:00</h4>
+                                        </div>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>22:00-24:00</h4>
+                                        </div>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    
+                                </td>  
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="col-md-2">
+                                    <div class="pb-2">
+                                        <a href="#"  role="button" class="btn btn-success">Categoria 1</a>
+                                    </div>
+                                    <div class="pb-2">
+                                            <a href="#"  role="button" class="btn btn-success">Categoria 2</a>
+                                        </div>
+                                    <div class="pb-2">
+                                            <a href="#"  role="button" class="btn btn-success">Categoria 3</a>
+                                        </div>
+                                    <div class="pb-2">
+                                            <a href="#"  role="button" class="btn btn-success">Categoria 4</a>
+                                        </div>
+                                    <div class="pb-2">
+                                            <a href="#"  role="button" class="btn btn-success">Categoria 5</a>
+                                        </div>
+                                    <div class="pb-2">
+                                            <a href="#"  role="button" class="btn btn-success">Categoria 6</a>
+                                        </div>
+            </div>
         </div>
     </div>
     </body>
