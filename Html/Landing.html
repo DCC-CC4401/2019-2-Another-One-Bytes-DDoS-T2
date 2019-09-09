@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>Landing page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/usm/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+    <body>
+    <!-- NavBar -->   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-between">
+      <a class="navbar-brand" href="#">Logo</a>
+      <div class="collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <li style="list-style: none; display: inline">
+        <form class="form-inline">
+                    <input class="form-control mr-md-2" type="search" placeholder="Buscar personas" aria-label="Search" /> 
+                    <button class="btn btn-outline-light my-2 my-md-0" type="submit">Buscar</button></form>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="Perfil" class="btn btn-outline-light dropdown-toggle ml-md-3 px-md-5" href="#" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Perfil</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Perfil">
+                        <a class="dropdown-item" href="#">Ver perfil</a> 
+                        <a class="dropdown-item" href="#">Configuración</a> 
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+      </div>
+     </nav>
+
+    <div class="container-fluid">
+    <!-- Start an activity -->          
+        <div class="row">
+            <div class="pt-2 col-md-12 text-center"><h2>Iniciar Actividad</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="d-flex flex-wrap column pt-3 pl-2 bg-light border border-success">
+                    <form class="flex-fill p-2">
+
+                        <p class="text-center font-weight-bold">Seleccione lo que quiere hacer</p>
+
+                        <div class="form-group row">
+                            <label for="exampleActivity" class="col-sm-3 col-form-label" >Actividad a Iniciar: </label>
+                            <select class="form-control" style="width: auto" name="Activity">
+                            <option value="" selected></option>
+                            <option value="Trabajar">Trabajar</option>
+                            <option value="Ver Tele">Ver TV</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="exampleCategory" class="col-sm-3 col-form-label">Categoría: </label>
+                            <select class="form-control" style="width: auto" name="Category">
+                            <option value="" selected></option>
+                            <option value="Estudio" >Estudio</option>
+                            <option value="Descanso">Descanso</option>
+                            <option value="Otra">Otra</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="exampleTime" class="col-sm-3 col-form-label">Tiempo estimado: </label>
+                            <div class="col-sm-auto p-0">
+                                <input type="text" class="form-control" style="width: auto" id="exampleTime" placeholder="HH:MM">
+                            </div>                           
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary center-block">Submit</button>
+                        </div>
+
+                    </form>                   
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class="text-center">Calendario</h2>
+        
+        <div class="row">
+            <div class="col-sm"></div>
+
+            <!--Calendar -->
+            <div class="col-sm" style="inline-block; max-width: 60%;">
+                <table id="Calendario" class="table-responsive table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Hora</h2>
+                            </div>
+                        </td>
+                        <td>
+                                        
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Lunes</h2>
+                            </div>
+                                        
+                        </td>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Martes</h2>
+                            </div>
+                                        
+                        </td>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Miércoles</h2>
+                            </div>
+                        </td>
+                        <td>                                      
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Jueves</h2>
+                            </div>
+                        </td>
+                        <td>                                       
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Viernes</h2>
+                            </div>   
+                        </td>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Sábado</h2>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h2>Domingo</h2>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h4>06:00-08:00</h4>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h4>08:00-10:00</h4>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>
+                            <center>
+                                <div class="pt-3 pl-2 pr-2 pb-2 border border-primary">
+                                    <h4>Estudiar</h4>
+                                </div>
+                            </center>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h4>10:00-12:00</h4>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pt-3 pl-2 pr-2 pb-2">
+                                <h4>12:00-14:00</h4>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>14:00-16:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td><center><div class="pt-3 pl-2 pr-2 pb-2 border border-danger"><h4>Sociabilizar</h4></div></center></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>16:00-18:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><center><div class="pt-3 pl-2 pr-2 pb-2 border border-primary">
+                                            <h4>Estudiar</h4>
+                                        </div></center></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>18:00-20:00</h4>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>20:00-22:00</h4>
+                                        </div>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                        <div class="pt-3 pl-2 pr-2 pb-2">
+                                            <h4>22:00-24:00</h4>
+                                        </div>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    
+                                </td>  
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            
+            <!--Select categories-->
+            <div class="col-sm">
+                <div class="row-sm" style="min-height: 30%"></div>
+                <div class="row-sm">
+                    <div class="pb-2">
+                        <a href="#"  role="button" class="btn btn-success">Categoria 1</a>
+                    </div>
+                    <div class="pb-2">
+                        <a href="#"  role="button" class="btn btn-primary">Categoria 2</a>
+                    </div>
+                    <div class="pb-2">
+                        <a href="#"  role="button" class="btn btn-secondary">Categoria 3</a>
+                    </div>
+                    <div class="pb-2">
+                        <a href="#"  role="button" class="btn btn-danger">Categoria 4</a>
+                    </div>
+                    <div class="pb-2">
+                        <a href="#"  role="button" class="btn btn-warning">Categoria 5</a>
+                    </div>
+                    <div class="pb-2">
+                        <a href="#"  role="button" class="btn btn-info">Categoria 6</a>
+                    </div>
+                </div>
+                <div class="row-sm" style="min-height: 30%"></div>
+            </div>            
+        </div>
+        <!--Time buttons -->
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col">
+                        <a href="#"  role="button" class="btn btn-secondary "><<</a>
+                    </div>
+                    <div class="col">
+                        <a href="#"  role="button" class="btn btn-secondary"><</a>
+                    </div>
+                    <div class="col">
+                        <a href="#"  role="button" class="btn btn-secondary">></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"  role="button" class="btn btn-secondary">>></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm"></div>
+        </div>  
+    </div>
+    </body>
+</html>
